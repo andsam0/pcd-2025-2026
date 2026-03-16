@@ -11,7 +11,7 @@ public class TestLatch {
 		int nThreadB = 10;
 		
 		/* this latch is not working */
-		Latch latch = new FakeLatch();
+		Latch latch = new RealLatch(10);
 		
 		List<ThreadA> threadsAlist = new ArrayList<ThreadA>();
 		for (int i = 0; i < nThreadA; i++) {

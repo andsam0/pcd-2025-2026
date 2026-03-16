@@ -4,8 +4,7 @@ public class TestInterruptedException {
 
 	public static void main(String[] args) throws Exception  {
 		Object obj = new Object();
-		
-	
+
 		var th = new Thread(() ->  {
 			try {
 				synchronized (obj) {
@@ -16,12 +15,9 @@ public class TestInterruptedException {
 				System.out.println("interrupted");
 			}
 		});
+
 		th.start();
-
 		Thread.sleep(1000);
-
 		th.interrupt();
-		
 	}
-
 }

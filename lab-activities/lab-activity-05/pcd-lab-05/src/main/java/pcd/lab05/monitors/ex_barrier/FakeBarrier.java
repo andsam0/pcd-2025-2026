@@ -8,7 +8,8 @@ public class FakeBarrier implements Barrier {
 	public FakeBarrier(int nParticipants) {	}
 	
 	@Override
-	public void hitAndWaitAll() throws InterruptedException {	
+	public void hitAndWaitAll() throws InterruptedException {
+		
 	}
 
 	

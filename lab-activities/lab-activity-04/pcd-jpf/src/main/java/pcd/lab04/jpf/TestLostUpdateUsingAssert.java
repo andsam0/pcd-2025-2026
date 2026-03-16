@@ -49,6 +49,7 @@ public class TestLostUpdateUsingAssert {
 		th1.start();
 		th0.join();
 		th1.join();
+		assert(c.getCount() == 2);
 	}
 	
 }
