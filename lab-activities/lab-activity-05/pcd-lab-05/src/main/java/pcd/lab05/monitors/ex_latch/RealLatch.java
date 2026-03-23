@@ -41,6 +41,4 @@ public class RealLatch implements Latch {
 			this.mutex.unlock();
 		}
 	}
-
-	
 }
